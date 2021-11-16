@@ -4,8 +4,8 @@ import smtplib #secure mail transfer protocol
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-email_user = "govindlalgupta9250@gmail.com"
-email_send = "anshulshakya298@gmail.com"
+email_user = "abc@gmail.com"
+email_send = "def@gmail.com"
 
 subject = "Greeting To The Intern Acadmey"
 
@@ -24,7 +24,7 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 
 #Next, log in to the server
-server.login("govindlalgupta9250@gmail.com", "Govind9210@")
+server.login("abc@gmail.com", "Password")
 #Send the mail
 
 server.sendmail(email_user, email_send, text) 
